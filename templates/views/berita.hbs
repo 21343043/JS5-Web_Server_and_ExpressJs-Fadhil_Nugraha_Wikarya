@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="main-content">
+      {{>header}}
+      <h2>{{judul}}</h2>
+      <div class="berita-list">
+          {{#each berita}}
+          <div class="berita-item">
+              <h3>{{title}}</h3>
+              <p>{{description}}</p>
+              <img src="{{image}}" alt="" srcset="" style="width: 280px; height: 210px;" />
+              <br>
+              <a href="{{url}}" target="_blank">Baca selengkapnya</a>
+            </div>
+          {{/each}}
+      </div>
+  </div>
+  {{>footer}}
+</body>
+</html>
